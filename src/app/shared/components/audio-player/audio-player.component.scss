@@ -54,6 +54,11 @@
     #box-container {
       height: 10px;
       margin-top: 5rem;
+      
+    }
+
+    .headClass
+    {
       background-color: rgb(13, 231, 166);
       color: rgb(20, 15, 15);
     }
@@ -64,13 +69,33 @@
       gap: 35px;
     }
   }
-  
-  @media (max-width: 480px) {
+
+  @media (max-width: 425px) {
     #box-container {
       gap: 45px;
       margin-top: -26rem;
+     
+    }
+
+    .headClass
+    {
       background-color: rgb(13, 231, 166);
       color: rgb(20, 15, 15);
     }
   }
+    
   
+  @media (max-width: 375px) {
+    #box-container {
+      gap: 45px;
+      margin-top: -30rem;
+     
+    }
+
+    .headClass
+    {
+      background-color: rgb(13, 231, 166);
+      color: rgb(20, 15, 15);
+    }
+  }
+    
