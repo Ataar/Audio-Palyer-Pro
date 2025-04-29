@@ -1,0 +1,33 @@
+<div id="box-container">
+    <h1 class="headClass">Audio Player</h1>
+  
+    <div
+      *ngFor="let item of audioFiles; let i = index"
+      [style.textAlign]="'center'"
+      [style.marginBottom.px]="20"
+    >
+      <div
+        class="box"
+        [style.backgroundColor]="colors[i] || 'lightgray'"
+        style="width: 100px; height: 100px; margin: 0 auto; display: flex; justify-content: center; align-items: center;"
+        (click)="toggleMusic(item.audio, i)"
+      >
+        <i
+          class="fa-solid"
+          [class.fa-circle-play]="!item.playing"
+          [class.fa-circle-pause]="item.playing"
+          style="font-size: 32px; color: white; background-color: black; border-radius: 50px"
+        ></i>
+      </div>
+  
+      <a
+        class="downloadBtn"
+        [href]="item.audio"
+        [download]="item.audio"
+        style="display: inline-block; margin-top: 15px; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none; font-family: Elephant"
+      >
+        Download
+      </a>
+    </div>
+  </div>
+  
