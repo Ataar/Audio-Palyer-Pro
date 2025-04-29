@@ -76,7 +76,7 @@
     #box-container {
       gap: 45px;
       margin-top: -40rem;
-      font-family: Georgia;
+      
      
     }
 
@@ -84,6 +84,8 @@
     {
       background-color: rgb(13, 231, 166);
       color: rgb(20, 15, 15);
+      font-family: Georgia;
+
     }
   }
     
@@ -92,7 +94,7 @@
     #box-container {
       gap: 45px;
       margin-top: -40rem;
-      font-family: Georgia;
+      font-family: Georgia !important;
 
     }
 
